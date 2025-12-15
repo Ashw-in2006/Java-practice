@@ -4,14 +4,15 @@ public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String a  = sc.nextLine();
     a = a.toLowerCase();
-    int count = 0;
+    //int count = 0;
     for(int i=0; i<a.length(); i++){
         char ch = a.charAt(i);
         if(ch=='a'||ch=='e'||ch=='o'||ch == 'i'||ch == 'u'){
-            count++;
+            //count++;
+            System.out.println(a.charAt(i)); 
         }
-        
+      
     }
-    System.out.println(count);
+    
 }    
 }
