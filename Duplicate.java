@@ -12,16 +12,14 @@ public class Duplicate {
         }
 
         for (int i = 0; i < n; i++) {
-            boolean duplicate = false;
-
-            for (int j = 0; j < i; j++) {
+            int j;
+            for (j = 0; j < i; j++) {
                 if (arr[i] == arr[j]) {
-                    duplicate = true;
                     break;
                 }
             }
 
-            if (!duplicate) {
+            if (j == i) {   
                 System.out.print(arr[i] + " ");
             }
         }
